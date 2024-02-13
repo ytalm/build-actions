@@ -150,22 +150,6 @@ CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 ---
 
 ﻿#### AutoBuild-OpenWrt
-[![license][1]][2]
-[![GitHub Stars](https://img.shields.io/github/stars/kenzok8/openwrt_Build.svg?style=flat-square&label=Stars)](https://github.com/kenzok8/openwrt_Build/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/kenzok8/openwrt_Build.svg?style=flat-square&label=Forks)](https://github.com/kenzok8/openwrt_Build)
-[![PRs Welcome][3]][4]
-[![Issue Welcome][5]][6]
-[![AutoBuild][12]][13]
-
-<a href="https://t.me/joinchat/JjxmyRZZXJWb74I-sCrryA" target="_blank">Telegram</a>
-
-<img src="https://v1.jinrishici.com/all.svg?font-size=24&spacing=3">
-
-#### 取消点赞触发，关联Update check触发编译，默认每周六更新！
-
-##### 谢谢 **kiddin9珠玉在前**[openwrt固件与插件下载](https://op.dllkids.xyz/op/firmware/)
-
-##### [docker镜像下载](https://hub.docker.com/r/kenzok8/openwrt-6p/tags)
 
 #### 源码来源：
 [![esir](https://img.shields.io/badge/AutoBuild-esir-red.svg?style=flat&logo=appveyor)](https://github.com/esirplayground/AutoBuild-OpenWrt)
