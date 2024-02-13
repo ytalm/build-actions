@@ -149,7 +149,7 @@ CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 
 ---
 
-﻿#### AutoBuild-OpenWrt
+### AutoBuild-OpenWrt
 
 #### 源码来源：
 [![esir](https://img.shields.io/badge/AutoBuild-esir-red.svg?style=flat&logo=appveyor)](https://github.com/esirplayground/AutoBuild-OpenWrt)
