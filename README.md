@@ -150,19 +150,6 @@ CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 ---
 
 ﻿#### AutoBuild-OpenWrt
-[1]: https://img.shields.io/badge/license-GPLV2-brightgreen.svg
-[2]: /LICENSE
-[3]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
-[4]: https://github.com/kenzok8/openwrt_Build/pulls
-[5]: https://img.shields.io/badge/Issues-welcome-brightgreen.svg
-[6]: https://github.com/kenzok8/openwrt_Build/issues/new
-[7]: https://img.shields.io/github/v/release/hyird/Action-Openwrt
-[8]: https://github.com/kenzok8/openwrt_Build/releases
-[10]: https://img.shields.io/badge/Contact-telegram-blue
-[11]: https://t.me/joinchat/JjxmyRZZXJWb74I-sCrryA
-[12]: https://github.com/kenzok8/openwrt_Build/workflows/autobuild/badge.svg
-[13]: https://github.com/kenzok8/openwrt_Build/actions
-
 [![license][1]][2]
 [![GitHub Stars](https://img.shields.io/github/stars/kenzok8/openwrt_Build.svg?style=flat-square&label=Stars)](https://github.com/kenzok8/openwrt_Build/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/kenzok8/openwrt_Build.svg?style=flat-square&label=Forks)](https://github.com/kenzok8/openwrt_Build)
