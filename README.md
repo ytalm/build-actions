@@ -160,7 +160,7 @@ CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 [8]: https://github.com/kenzok8/openwrt_Build/releases
 [10]: https://img.shields.io/badge/Contact-telegram-blue
 [11]: https://t.me/joinchat/JjxmyRZZXJWb74I-sCrryA
-[12]: https://github.com/kenzok8/openwrt_Build/actions/workflows/Lean.yml/badge.svg
+[12]: https://github.com/kenzok8/openwrt_Build/workflows/autobuild/badge.svg
 [13]: https://github.com/kenzok8/openwrt_Build/actions
 
 [![license][1]][2]
@@ -174,8 +174,9 @@ CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 
 <img src="https://v1.jinrishici.com/all.svg?font-size=24&spacing=3">
 
+#### 取消点赞触发，关联Update check触发编译，默认每周六更新！
 
-##### [openwrt固件与插件下载](https://op.dllkids.xyz/op/firmware/)
+##### 谢谢 **kiddin9珠玉在前**[openwrt固件与插件下载](https://op.dllkids.xyz/op/firmware/)
 
 ##### [docker镜像下载](https://hub.docker.com/r/kenzok8/openwrt-6p/tags)
 
@@ -193,22 +194,23 @@ CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 
 ##### 固件下载链接
 
-- [Lienol_23.05固件地址](https://op.dllkids.xyz/op/firmware/Lienol/)
-- [Lean固件地址](https://op.dllkids.xyz/op/firmware/Lean/)
-- [immortalwrt-23.05固件](https://op.dllkids.xyz/op/firmware/ctc_23.05/)
-- [immortalwrt-18.06固件](https://op.dllkids.xyz/op/firmware/ctc_18.06/)
-- [nanopi-r5s固件下载](https://op.dllkids.xyz/op/firmware/nanopi-r5s/)
-- [nanopi-r4s固件下载](https://op.dllkids.xyz/op/firmware/nanopi-r4s/)
+- [Lienol5.10内核固件地址](https://github.com/kenzok8/openwrt_Build/actions?query=workflow%3ALienol)
+- [Lean_5.10内核 固件地址](https://github.com/kenzok8/openwrt_Build/actions?query=workflow%3ALean)
+- [immortalwrt-21.02固件](https://github.com/kenzok8/openwrt_Build/actions?query=workflow%3Aopenwrt_21.02)
+- [immortalwrt-18.06固件](https://github.com/kenzok8/openwrt_Build/actions?query=workflow%3Aopenwrt_18.06)
+- [nanopi-r2s__固件下载](https://github.com/kenzok8/openwrt_Build/actions?query=workflow%3Ananopi-r2s)
+- [nanopi-r4s__固件下载](https://github.com/kenzok8/openwrt_Build/actions?query=workflow%3Ananopi-r4s)
 
 ### 默认插件包含:
 
-+ adguardhome
-+ alist
-+ Mosdns
-+ openclash
 + SSR Plus 
++ passwall2
++ bypass
++ openclash
 + 动态DDNS
 + UPNP 自动端口转发
++ Turbo ACC 网络加速
++ Mwan3 负载均衡
 + 默认多个主题
 + 默认管理 IP: 192.168.1.252, 用户名 root，密码 password
 
@@ -217,9 +219,9 @@ CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 ```bash
 sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generate
 ```
-* 替换终端为bash	
+* 删除原主题	
 ```bash
-sed -i 's/\/bin\/ash/\/bin\/bash/' package/base-files/files/etc/passwd
+rm -rf package/lean/luci-theme-argon
 ```
 
 * 添加新的主题
@@ -237,7 +239,7 @@ sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-defaul
 
 * 取消bootstrap为默认主题	
 ```bash
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 ```
 
 
